@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677 , #4e085f );
+    width: 100%;
+    padding: 10px;
+}
+
+.todo{
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    background: #ffff;
+    margin: 100px auto 20px;
+    padding: 40px 70px 30px;
+    border-radius: 10px;
+}
+
+.todo h1{    
+    margin-bottom: 20px;
+    color: #002765;
+    display: flex;
+    align-self: center;
+    /* align-items: center; */
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    border-radius: 30px;
+    background: #d1cfcfaf;
+    border: 1px solid #d1cfcfaf;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: #ff5945;
+    padding: 15px 50px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+ul li{
+   list-style: none;
+   /* display: inline; */
+   font-size: 17px;
+   /* top: 12px; */
+   padding: 12px 8px 12px 35px; 
+   user-select: none;
+   cursor: pointer;
+   position: relative;
+   /* border: 2px solid #000000; */
+}
+
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 5px;
+    /* font-size: 20px; */
+    /* padding-right: 10px; */
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;    
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 5px;
+}
+
+ul li span{
+    position: absolute;
+    /* border: 2px solid #000000; */
+    right: 0px;
+    /* left: 2500px; */
+    top: 5px;
+    font-size: 22px;
+    color: #555;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    /* color: #564543; */
+    background-color: #7e8083;
+    border-radius: 50%;
+}
