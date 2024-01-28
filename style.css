@@ -150,7 +150,8 @@ ul li span:hover{
 
     button{
         padding: 15px 30px;
-        margin-left: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     input{
