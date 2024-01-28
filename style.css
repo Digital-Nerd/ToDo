@@ -127,7 +127,7 @@ ul li span:hover{
     border-radius: 50%;
 }
 
-@media screen and (min-device-width : 320px) and (max-width:600px)  {
+@media screen and (max-width:600px)  {
     .container{
         padding: 0px;
         width: 100%;
@@ -151,6 +151,9 @@ ul li span:hover{
 
     .todo{
         padding: 40px 20px 30px;
+        margin-left:  8px;
+        margin-right: 8px;
+        width: auto;
     }
 
     button{
@@ -193,6 +196,37 @@ ul li span:hover{
     .todo h1{
         font-size: 20px;
     }
+}
 
+@media screen and (min-device-width : 320px){
+    .container{
+        padding: 0px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .todo h1{
+        font-size: 20px;
+    }
 
+    .row{
+        padding-left: 10px;
+    }
+
+    .todo{
+        padding: 40px 20px 30px;
+        margin-left:  8px;
+        margin-right: 8px;
+        width: auto;
+    }
+
+    button{
+        padding: 15px 30px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    input{
+        padding: 10px;
+        font-size: 14px;
+    }
 }
