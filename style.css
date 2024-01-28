@@ -198,7 +198,7 @@ ul li span:hover{
     }
 }
 
-@media screen and (max-device-width : 320px){
+/* @media screen and (max-device-width : 320px){
     .container{
         padding: 0px;
         width: 100%;
@@ -229,4 +229,4 @@ ul li span:hover{
         padding: 10px;
         font-size: 14px;
     }
-}
+} */
