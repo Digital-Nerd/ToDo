@@ -27,7 +27,7 @@
     border-radius: 10px;
 }
 
-.todo h1{    
+.todo h1{
     margin-bottom: 20px;
     color: #002765;
     display: flex;
@@ -72,7 +72,7 @@ ul li{
    /* display: inline; */
    font-size: 17px;
    /* top: 12px; */
-   padding: 12px 8px 12px 35px; 
+   padding: 12px 8px 12px 35px;
    user-select: none;
    cursor: pointer;
    position: relative;
@@ -96,7 +96,7 @@ ul li::before{
 
 ul li.checked{
     color: #555;
-    text-decoration: line-through;    
+    text-decoration: line-through;
 }
 
 ul li.checked::before{
@@ -125,4 +125,46 @@ ul li span:hover{
     /* color: #564543; */
     background-color: #7e8083;
     border-radius: 50%;
+}
+
+@media screen and (max-width:600px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-left: 25px;
+        border-radius: 30px;
+        background: #d1cfcfaf;
+        border: 1px solid #d1cfcfaf;
+        /* border: 2px solid #000000; */
+    }
+
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        font-size: 14px;
+        /* height: 15px; */
+        /* width: 250px; */
+        /* border: 2px solid #000000; */
+    }
+
+    button{
+        border: none;
+        text-align: center;
+        outline: none;
+        background: #ff5945;
+        padding: 15px 50px;
+        margin-left: 60px;
+        margin-top: 0px;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        /* border-radius: 30px; */
+        /* width: 50px; */
+    }
 }
